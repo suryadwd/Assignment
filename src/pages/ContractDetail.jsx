@@ -5,37 +5,20 @@ import ContractMetadata from "../components/ContractMetadata";
 import ClauseCard from "../components/ClauseCard";
 import InsightsList from "../components/InsightsList";
 import EvidenceDrawer from "../components/EvidenceDrawer";
+import { useContract } from "@/hooks/getAllContracts";
 
 const ContractDetail = () => {
-  const { id } = useParams(); // ✅ get ":id" from URL
-  const [contract, setContract] = useState(null);
+  const { id } = useParams(); // 
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [error, setError] = useState(null);
+  
 
-  useEffect(() => {
-    const fetchContract = async () => {
-      try {
-        const res = await axios.get("/contracts.json"); // ✅ file from public/
-        const found = res.data.contractDetails[id]; // ✅ correct key
-        if (!found) {
-          setError(`Contract with ID "${id}" not found`);
-        } else {
-          setContract(found);
-        }
-      } catch (err) {
-        console.error("Error loading contract", err);
-        setError("Failed to load contract. Please try again later.");
-      }
-    };
-    fetchContract();
-  }, [id]);
+  const { contract, error, loading } = useContract(id);
 
   if (error) return <div className="p-6 text-red-500">{error}</div>;
   if (!contract) return <div className="p-6">Loading...</div>;
 
   return (
     <div className="p-6 space-y-6">
-      {/* Metadata */}
       <ContractMetadata
         name={contract.name}
         parties={contract.parties}

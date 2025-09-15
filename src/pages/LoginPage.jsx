@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux'
 import { useState, useEffect } from 'react';
 import { login } from '../Redux/authSlice'
-import  HomePage  from './ContractsDashboard'
+import  ContractsDashboard  from './ContractsDashboard'
 
 const Login = () => {
 
@@ -21,7 +21,7 @@ const Login = () => {
   useEffect(() => {
     if (token) {
       toast.success('Login Successfully ✅')
-      navigate('/Dashboard')
+      navigate('/contractsDashboard')
     }
   }, [token, navigate])
 

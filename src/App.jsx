@@ -6,7 +6,7 @@ import LoginPage from './pages/LoginPage'
 import ContractsDashboard from "./pages/ContractsDashboard";
 import Profile from './pages/Profile'
 import ContractDetail from './pages/ContractDetail'
-import { UploadPage } from './pages/UploadPage'
+import  UploadPage  from './pages/UploadPage'
 function App() {
 
   return (
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/dashboard" element={<ContractsDashboard />} />
+        <Route path="/contractsDashboard" element={<ContractsDashboard />} />
         <Route path="/profile" element={<Profile />} />
          <Route path="/contracts/:id" element={<ContractDetail />} />
          <Route path="/UploadPage" element={<UploadPage />} />
