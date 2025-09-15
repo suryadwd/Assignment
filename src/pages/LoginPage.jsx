@@ -21,7 +21,7 @@ const Login = () => {
   useEffect(() => {
     if (token) {
       toast.success('Login Successfully ✅')
-      navigate('/HomePage')
+      navigate('/Dashboard')
     }
   }, [token, navigate])
 
