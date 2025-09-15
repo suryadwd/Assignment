@@ -64,7 +64,7 @@ const Login = () => {
       </div>
       <p className='text-gray-300 mt-4 cursor-pointer'>Forget Password</p>
       <div className="mt-4">
-        <p className="text-gray-300">Don't have an account? &nbsp;<span className="text-blue-200 cursor-pointer font-bold"><Link to="/auth/signup" >Sign Up</Link></span></p>
+        <p className="text-gray-300">Don't have an account? &nbsp;<span className="text-blue-200 cursor-pointer font-bold">Sign Up</span></p>
       </div>
       
       </div>
