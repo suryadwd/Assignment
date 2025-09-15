@@ -1,5 +1,6 @@
 # Assignment Contract Dashboard
 
+## Live Demo -- You can view the live site here: [https://assignment.devsurya.space](https://assignment.devsurya.space)
 
 This is a frontend Assignment built with React, Redux, Tailwind CSS, and Vite. It allows users to view, filter, and manage contracts, see AI-generated insights, upload files, and handle authentication. The project demonstrates modern frontend engineering practices and UI component design.
 
@@ -101,6 +102,12 @@ frontend/
 ---
 
 ## Getting Started
+
+# How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
 
 1. **Install dependencies:**
    ```sh
@@ -221,13 +228,7 @@ This project is for educational/demo purposes.
 
 Suryakant Dwivedi
 
----
 
-## Screenshots
-
-> Add screenshots here for dashboard, contract details, uploads, etc.
-
----
 
 ## Notes
 
