@@ -8,7 +8,7 @@ const riskColors = {
 
 const InsightsList = ({ insights }) => {
   return (
-    <div className="bg-white shadow rounded p-4 mb-6">
+    <div className="bg-zinc-700 shadow rounded p-4 mb-6">
       <h2 className="text-xl font-bold mb-3">AI Insights</h2>
       {insights.map((i, idx) => (
         <div key={idx} className="mb-2">

@@ -3,9 +3,9 @@ import './App.css'
 import { ToastContainer } from 'react-toastify'
 import LandingPage from './pages/LandingPage'
 import LoginPage from './pages/LoginPage'
-import  Dashboard  from './pages/Dashboard'
+import ContractsDashboard from "./pages/ContractsDashboard";
 import Profile from './pages/Profile'
-
+import ContractDetail from './pages/ContractDetail'
 function App() {
 
   return (
@@ -13,8 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<ContractsDashboard />} />
         <Route path="/profile" element={<Profile />} />
+         <Route path="/contracts/:id" element={<ContractDetail />} />
       </Routes>
      <ToastContainer /> 
      </>

@@ -63,7 +63,7 @@ const ContractsDashboard = () => {
   return (
     <div className="flex h-screen">
       <Sidebar />
-      <div className="flex-1 p-6 bg-gray-100 overflow-auto">
+      <div className="flex-1 p-6 bg-zinc-300 overflow-auto">
         <Topbar />
         <Filters
           search={search} setSearch={setSearch}

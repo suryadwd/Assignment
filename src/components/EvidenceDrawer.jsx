@@ -8,12 +8,12 @@ const EvidenceDrawer = ({ isOpen, onClose, evidence }) => {
       }`}
     >
       <div className="p-4 flex justify-between items-center border-b">
-        <h2 className="text-xl font-bold">Evidence</h2>
-        <button onClick={onClose} className="text-red-500">✖</button>
+        <h2 className="text-3xl text-black font-bold">Evidence</h2>
+        <button onClick={onClose} className="text-white">✖</button>
       </div>
       <div className="p-4 overflow-y-auto">
         {evidence.map((e, idx) => (
-          <div key={idx} className="mb-4">
+          <div key={idx} className="mb-4 bg-white p-3 rounded shadow">
             <p className="font-semibold"> {e.source}</p>
             <p className="text-gray-700">“{e.snippet}”</p>
             <p className="text-sm text-gray-500">Relevance: {(e.relevance * 100).toFixed(1)}%</p>

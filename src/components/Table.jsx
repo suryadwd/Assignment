@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const ContractsTable = ({ contracts }) => {
+  const navigate = useNavigate();
   return (
     <table className="min-w-full bg-blue-500 border">
       <thead>
@@ -14,7 +15,9 @@ const ContractsTable = ({ contracts }) => {
       </thead>
       <tbody>
         {contracts.map(c => (
-          <tr key={c.id} className="text-center hover:bg-gray-900">
+          <tr key={c.id} className="text-center hover:bg-gray-900"
+             onClick={() => navigate(`/contracts/${c.id}`)}
+          >
             <td className="py-2 px-4 border">{c.name}</td>
             <td className="py-2 px-4 border">{c.parties}</td>
             <td className="py-2 px-4 border">{c.expiry}</td>

@@ -10,7 +10,7 @@ const Pagination = ({ page, totalPages, setPage }) => {
       >
         Prev
       </button>
-      <span>Page {page} of {totalPages}</span>
+      <span className="text-black">Page {page} of {totalPages}</span>
       <button
         disabled={page === totalPages}
         onClick={() => setPage(page + 1)}

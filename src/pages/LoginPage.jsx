@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux'
 import { useState, useEffect } from 'react';
 import { login } from '../Redux/authSlice'
-import  HomePage  from './Dashboard'
+import  HomePage  from './ContractsDashboard'
 
 const Login = () => {
 
